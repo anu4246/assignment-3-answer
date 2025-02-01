@@ -21,7 +21,7 @@
   <body>
     <header>
       <nav
-        class="border lg:border-0 md:border-0 bg-[#FFF9F4] flex justify-between font-[Sora] lg:pl-30 lg:pr-30 gap-5 pt-4 pb-4 w-[100%]"
+        class=" p-4 border lg:border-0 md:border-0 bg-[#FFF9F4] flex justify-between font-[Sora] lg:pl-30 lg:pr-30 gap-5 pt-4 pb-4 w-[100%]"
       >
         <div class="flex justify-center items-center gap-2 text-[6]">
           <img src="assets/logo-header.png" alt="header logo" />
@@ -83,8 +83,8 @@
         />
       </nav>
       <!-- Banner section -->
-      <section class="lg:ml-30 lg:mr-30 mb-30">
-        <div class="bg-[url('/assets/cat-big.png')] h-180 mb:50 sm:bg-cover">
+      <section class="lg:ml-30 lg:mr-30 lg:mb-30">
+        <div class=" h-180 lg:mb:50">
           <h1 class="font-[Sora] text-5xl font-bold w-140 h-40 mt-21">
             Pamper Your Pet, Because They Deserve the Best
           </h1>
@@ -100,40 +100,48 @@
             Find a pet
           </button>
         </div>
+        <div class="absolute x-10 -mt-104 mb-4 lg:mb-50">
+          <img src="assets/cat-big.png" alt="cat">
+        </div>
       </section>
+       <!-- Extra section -->
+       <section class="mt-2 lg:mt-50 -mb-30 font-[Sora]">
+        <marquee class="bg-[#F9DF8A]" height="25"direction="left">Cats</marquee>
+        <marquee class="bg-[#FFDC26]" height="25"direction="right">Dogs</marquee>
+           </section>
       <!-- category section -->
-      <section class="lg:ml-30 lg:mr-30 font-[Sora] mb-35">
-        <h2 class="font-[Sora] text-2xl font-bold w-90 h-15 mt-21">
+      <section class="flex flex-col lg:ml-30 lg:mr-30 font-[Sora] mb-35 mt-0 lg:mt-20">
+        <h2 class="font-[Sora] text-2xl font-bold w-90 h-15 mt-30">
           Browse By Categories
         </h2>
         <!-- cardbox start here -->
-        <div class="flex gap-4 justify-between">
-          <div class="bg-[#F9DF8A] rounded-xl w-55 h-65 flex flex-col p-10 flex items-center">
+        <div class="flex gap-2 justify-between flex-wrap">
+          <div class="bg-[#F9DF8A] rounded-xl w-50 h-65 flex flex-col p-10 flex items-center">
             <img class="bg-white rounded-full p-7" src="assets/dog-cartoon.png" alt="dog" />
             <p class="mt-4 mb-3 text-xl font-semibold">Dog</p>
             <p>3 Items</p>
           </div>
-          <div class="bg-[#F9DF8A] rounded-xl w-55 h-65 flex flex-col p-10 flex items-center">
+          <div class="bg-[#F9DF8A] rounded-xl w-50 h-65 flex flex-col p-10 flex items-center">
             <img class="bg-white rounded-full p-7" src="assets/fish-cartoon.png" alt="dog" />
             <p class="mt-4 mb-3 text-xl font-semibold">Fish</p>
             <p>3 Items</p>
           </div>
-          <div class="bg-[#F9DF8A] rounded-xl w-55 h-65 flex flex-col p-10 flex items-center">
+          <div class="bg-[#F9DF8A] rounded-xl w-50 h-65 flex flex-col p-10 flex items-center">
             <img class="bg-white rounded-full p-7" src="assets/cat-cartoon.png" alt="dog" />
             <p class="mt-4 mb-3 text-xl font-semibold">Cat</p>
             <p>3 Items</p>
           </div>
-          <div class="bg-[#F9DF8A] rounded-xl w-55 h-65 flex flex-col p-10 flex items-center">
+          <div class="bg-[#F9DF8A] rounded-xl w-50 h-65 flex flex-col p-10 flex items-center">
             <img class="bg-white rounded-full p-7" src="assets/bird-cartoon.png" alt="dog" />
             <p class="mt-4 mb-3 text-xl font-semibold">Birds</p>
             <p>3 Items</p>
           </div>
-          <div class="bg-[#F9DF8A] rounded-xl w-55 h-65 flex flex-col p-10 flex items-center">
+          <div class="bg-[#F9DF8A] rounded-xl w-50 h-65 flex flex-col p-10 flex items-center">
             <img class="bg-white rounded-full p-7" src="assets/mouse-cartoon.png" alt="dog" />
             <p class="mt-4 mb-3 text-xl font-semibold">Small Pet</p>
             <p>3 Items</p>
           </div>
-          <div class="bg-[#F9DF8A] rounded-xl w-55 h-65 flex flex-col p-10 flex items-center">
+          <div class="bg-[#F9DF8A] rounded-xl w-50 h-65 flex flex-col p-10 flex items-center">
             <img class="bg-white rounded-full p-7" src="assets/rabbit-cartoon.png" alt="dog" />
             <p class="mt-4 mb-3 text-xl font-semibold">Rabit</p>
             <p>3 Items</p>
@@ -148,7 +156,7 @@
         <h2 class="text-2xl font-bold text-black mb-6">Popular Products</h2> 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6"> 
           <!-- Offer Card --> 
-          <div class="bg-[#F9DF8A] rounded-2xl p-6 shadow-lg pr-20"> 
+          <div class="w-[90%] bg-[#F9DF8A] rounded-2xl p-6 shadow-lg pr-20"> 
             <h3 class="text-xl font-bold text-black">T-shirt For Dogs </h3> 
             <p class="text-black mt-4"> 
                 Discover a world of treats, toys and essentials handpicked for
@@ -318,8 +326,8 @@
     <!-- Everyday section start here --> 
     <section class="lg:ml-30 lg:mr-30 font-[Sora] mt-30">
         <h1 class="text-2xl font-bold text-black">Everyday low Price</h1>
-        <div class="flex flex-col gap-20 justify-between lg:flex-row mt-5">
-        <div class="flex items-center bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD] pl-20 rounded-xl w-200">
+        <div class="flex flex-col gap-20 justify-between lg:flex-row mt-5 ml-5 lg:ml-0">
+        <div class="flex items-center bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD] pl-20 rounded-xl w-95 lg:w-200">
             <div>
                 <p class="text-xs">Under Price</p>
                 <h2 class="font-semibold mt-2">Pet Grooming Mitt</h2>
@@ -332,7 +340,7 @@
             </div>
         </div>
         <div class="bg-linear-to-r from-[#FFF9F4] to-[#F9DF8A] p-10 rounded-xl">
-        <div>
+        <div class=" ml-2 w-90 lg:w-100">
             <h2 class="font-semibold mt-10">T-Shirt for Dogs</h2>
             <p class="text-2xl font-bold mt-4 text-[#FFDC26]">$7.99</p>
         </div>
@@ -344,8 +352,8 @@
     </section>
 </main>
        <!-- Newsletter Section --> 
-         <section class="relative z-10 lg:ml-30 lg:mr-30 font-[Sora] mt-30 -mb-46 border-0 rounded-xl bg-white">
-            <div class="flex flex-col lg:flex-row items-center gap-40 pl-30 bg-white">
+         <section class=" relative z-10 lg:ml-30 lg:mr-30 font-[Sora] mt-30 -mb-46 border-0 rounded-xl bg-white">
+            <div class="flex flex-col lg:flex-row items-center gap-40 pl-30 bg-white rounded-2xl">
                 <div>
                     <img src="assets/cute-pet-mid.png" alt="pet">
                 </div>
@@ -362,7 +370,7 @@
             </div>
          </section>
          <!-- footer section start here -->
-        <footer class="bg-[#F9DF8A] pt-60 pl-30 pr-30 font-[Sora] pb-18">
+        <footer class="bg-[#F9DF8A] p-10 pt-60 lg:pl-30 lg:pr-30 font-[Sora] pb-18">
             <div class="flex flex-col lg:flex-row justify-between">
             <div class="flex flex-col gap-4">
                 <div class="flex gap-5 items-center">
